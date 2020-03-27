@@ -1,0 +1,10 @@
+<form [formGroup]="userDetailsForm">
+
+  <mat-form-field>
+    <input matInput formControlName="name" placeholder="name" autofocus>
+    <mat-hint align="start"><strong>Enter Name</strong> </mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="onSubmit()" color="accent">submit</button>
+
+</form>
