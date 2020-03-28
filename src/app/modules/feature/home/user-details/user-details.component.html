@@ -1,8 +1,33 @@
-<form [formGroup]="userDetailsForm">
+<form fxLayout="column" fxLayoutAlign="space-evenly center" [formGroup]="userDetailsForm">
 
-  <mat-form-field>
-    <input matInput formControlName="name" placeholder="name" autofocus>
-    <mat-hint align="start"><strong>Enter Name</strong> </mat-hint>
+  <mat-form-field appearance="outline">
+    <mat-label>Name:</mat-label>
+    <input matInput formControlName="name" placeholder="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>phone:</mat-label>
+    <input matInput formControlName="phone1" placeholder="phone1">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Alternate Phone:</mat-label>
+    <input matInput formControlName="phone2" placeholder="phone2">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Email:</mat-label>
+    <input matInput formControlName="email" placeholder="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Address:</mat-label>
+    <input matInput formControlName="address" placeholder="address">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Landmark:</mat-label>
+    <input matInput formControlName="landmark" placeholder="landmark">
   </mat-form-field>
 
   <button mat-raised-button (click)="onSubmit()" color="accent">submit</button>

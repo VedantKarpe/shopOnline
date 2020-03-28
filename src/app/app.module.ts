@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './modules/feature/home/home.module';
 import { AngularMaterialModule } from './modules/shared/angular-material.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CanDeactivateService } from './services/guards/can-deactivate/can-deactivate.service';
 import { TokenInterceptorService } from './services/interceptor/token-interceptor.service';
@@ -21,7 +22,9 @@ import { TokenInterceptorService } from './services/interceptor/token-intercepto
     BrowserAnimationsModule,
     AngularMaterialModule,
     HttpClientModule,
-    HomeModule
+    HomeModule,
+    FlexLayoutModule,
+
   ],
   providers: [
     CanDeactivateService,
