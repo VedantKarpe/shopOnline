@@ -1,3 +1,19 @@
-<div>
-    <router-outlet></router-outlet>
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
+    <span>
+      Developer One
+    </span>
+    <div fxLayout="row" fxLayoutGap="20px">
+      <button mat-raised-button>
+        <mat-icon aria-hidden="false" aria-label="Home Icon">home</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-progress-bar color="primary" mode="indeterminate">
+</mat-progress-bar>
+
+<div class="component-placeholder">
+  <router-outlet></router-outlet>
 </div>
