@@ -1,4 +1,11 @@
 
 .full-height {
     height: 100%;
+}
+
+.mat-column-order {
+  button,
+  mat-form-field {
+    margin-right: 5px;
   }
+}

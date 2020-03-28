@@ -1,11 +1,17 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">
     <span>
-      Developer One
+      Goa's - Shop Online
     </span>
     <div fxLayout="row" fxLayoutGap="20px">
       <button mat-raised-button>
-        <mat-icon aria-hidden="false" aria-label="Home Icon">home</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Home Icon" (click)="navigateHome()">home</mat-icon>
+      </button>
+      <button (click)="navigateProduct()">
+          product page
+      </button>
+      <button  (click)="navigateSummary()">
+          summary page
       </button>
     </div>
   </mat-toolbar-row>
