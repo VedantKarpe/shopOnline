@@ -11,7 +11,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class ProductComponent implements OnInit {
 
-  public displayedColumns: string[] = ['no', 'item', 'quantity', 'price'];
+  public displayedColumns: string[] = ['no', 'item', 'quantity', 'price', 'order'];
   public data =  [
     { no: 1, item: 'Rice', quantity: '1kg', price: '40' },
     { no: 1, item: 'Rice', quantity: '1kg', price: '40' },
